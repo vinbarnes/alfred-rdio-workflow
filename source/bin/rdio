@@ -45,6 +45,7 @@ class Rdio
       actions[:pause] = lambda { AppleScript.call(%q{tell application \\"Rdio\\" to pause}) }
       actions[:next] = lambda { AppleScript.call(%q{tell application \\"Rdio\\" to next track}) }
       actions[:previous] = lambda { AppleScript.call(%q{tell application \\"Rdio\\" to previous track}) }
+      actions[:pp] = lambda { AppleScript.call(%q{tell application \\"Rdio\\" to playpause}) }
       actions[:now] = lambda { `#{bin_directory}/now_playing` }
       actions
     end
